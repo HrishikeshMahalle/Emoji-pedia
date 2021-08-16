@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  background-image: url("https://www.xmple.com/wallpaper/linear-pink-gradient-1280x720-c2-ffb6c1-ff69b4-a-135-f-14.svg");
+}
+
+.app {
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  height: 60px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 70px;
+  font-family: "Fuggles", cursive;
+}
+
+.container {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1.875em auto;
+}
+
+input {
+  width: 46.875em;
+  height: 3.125em;
+  font-size: 1.25em;
+  padding: 7px;
+  border: 2px solid #333;
+  border-radius: 100px;
+  outline: none;
+  transition: all 100ms ease-in;
+  margin-top: 1.875em;
+}
+
+input:focus,
+input:hover {
+  width: 50em;
+  box-shadow: 0px 0px 3px 2px #333;
+  border-radius: 0;
+}
+
+p {
+  margin-top: 1.25em;
+  color: #000;
+  font-size: 1.125em;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.emoji {
+  margin-top: 1.25em;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1.25em;
+}
+
+.emojis {
+  font-size: 3.125em;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 1.25em 0.625em 0 0.625em;
+  font-family: "Fuggles", cursive;
+  font-size: 1.875em;
+  font-weight: 600;
+  letter-spacing: 0.125em;
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+
+  input {
+    width: 25em;
+  }
+
+  input:focus,
+  input:hover {
+    width: 28em;
+  }
+}
